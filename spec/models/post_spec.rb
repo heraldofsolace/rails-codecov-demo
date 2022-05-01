@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   context "during validation" do
-    it "rejects if title is empty" do
-      expect(Post.create title: "", body: "Sample post 1").to be_invalid
-    end
+    # it "rejects if title is empty" do
+    #   expect(Post.create title: "", body: "Sample post 1").to be_invalid
+    # end
 
     it "rejects if body is empty" do
       expect(Post.create title: "Sample post", body: "").to be_invalid
